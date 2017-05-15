@@ -13,3 +13,9 @@ This project is made with only HTML, CSS and VanillaJS.
 ## Live Link
 The live dashboard can be found on the following link:
 [Live Dashboard](http://www.shyantavleugel.nl/dutchies/index.html)
+
+## Get the code
+If you want the code on your own computer, first you have to navigate to the folder where you want the code in. Then enter the following command in your CLI:
+```
+git clone https://github.com/shyanta/dutchies.git
+```
