@@ -1,0 +1,191 @@
+/* General Styling */
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+
+header {
+	background-color: #07343F;
+}
+	header h1 {
+		width: 100%;
+		height: 2em;
+		margin: 0;
+		line-height: 2em;
+		text-align: center;
+		color: #fff;
+	}
+
+/*Styles for mobile navigation*/
+div[role="main"] #mobile-nav {
+	height: calc(100vh - 3em);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #D93522;
+}
+div[role="main"] #mobile-nav.hide {
+	display: none;
+}
+	div[role="main"] #mobile-nav button {
+		flex-grow: 1;
+		flex-basis: 50%;
+		width: 50%;
+		border: none;
+		color: #fff;
+		background-color: #D93522;
+		position: relative;
+	}
+		div[role="main"] #mobile-nav button.usd-eur,
+		div[role="main"] #mobile-nav button.celsius-farenheit,
+		div[role="main"] #mobile-nav button.mi-km {
+			background-color: #DB7058;
+		}
+		div[role="main"] #mobile-nav button span {
+			font-size: 1.7em;
+			font-weight: bold;
+			display: block;
+			width: 100%;
+			text-align: center;
+			line-height: 2em;
+		}
+	/*Styles for mobile Sections*/
+	div[role="main"] div {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+		div[role="main"] div section {
+			height: calc(100vh - 3em);
+			flex-basis: 100%;
+			width: 100%;
+			align-self: center;
+			display: none;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+			background-color: #F3F3E1;
+		}
+			div[role="main"] div section.active {
+				display: flex;
+			}
+			div[role="main"] div section h1 {
+				flex-basis: 80%;
+				width: 80%;
+				box-sizing: border-box;
+				line-height: 80px;
+				font-size: 1.3em;
+				color: #fff;
+				padding-left: 10px;
+				height: 80px;
+				margin: 0;
+				background-color: #D95549;
+			}
+			div[role="main"] div section p {
+				flex-basis: 20%;
+				width: 20%;
+				box-sizing: border-box;
+				display: block;
+				line-height: 80px;
+				color: #000;
+				text-align: center;
+				height: 80px;
+				margin: 0;
+				background-color: #DB7058;
+			}
+			div[role="main"] div section form {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				flex-basis: 100%;
+				width: 100%;
+			}
+				div[role="main"] div section form label {
+					flex-basis: 80%;
+					width: 80%;
+					margin: 0 10%;
+					line-height: 2em;
+				}
+				div[role="main"] div section form input[type="number"] {
+					flex-basis: 80%;
+					width: 80%;
+					margin: 0 10%;
+					width: 80%;
+					font-size: 16px;
+					line-height: 2em;
+				}
+				div[role="main"] div section form input[type="submit"] {
+					flex-basis: 80%;
+					width: 80%;
+					text-align: center;
+					margin: 5% 10%;
+					color: #fff;
+					font-size: 1em;
+					font-weight: bold;
+					line-height: 2em;
+					border: none;
+					border-radius: 0px !important;
+					background-color: #D93522 !important;
+					-webkit-appearance: none;
+				}
+			div[role="main"] div section output {
+				height: 200px;
+				width: 80%;
+				margin: 0 10%;
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+	/*Styles for Computer and Tablet dashboard*/
+	@media screen and (min-width: 768px){
+		div[role="main"] {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+			div[role="main"] div {
+				flex-grow: 1;
+				flex-basis: 33.33%;
+				width: 33.33%;
+				display: block;
+			}
+				div[role="main"] div section {
+					height: auto;
+					display: block;
+					height: calc((100vh - 4em)/2);
+				}
+					div[role="main"] div section p {
+						display: none;
+					}
+					div[role="main"] div section h1 {
+						text-align: center;
+						flex-basis: 100%;
+						width: 100%;
+						background-color: #D93522;
+					}
+						div[role="main"] div section#usd-eur h1,
+						div[role="main"] div section#celsius-farenheit h1,
+						div[role="main"] div section#mi-km h1 {
+							background-color: #DB7058;
+						}
+					div[role="main"] div section form {
+						margin-top: 50px;
+					}
+						div[role="main"] div section form input[type="number"] {
+							line-height: 2em;
+						}
+						div[role="main"] div section form input[type="submit"] {
+							line-height: 2em;
+							background-color: #D95549 !important;
+							font-weight: normal;
+						}
+					div[role="main"] div section output {
+						width: 80%;
+						margin: 0 10%;
+						font-size: 2em;
+						font-weight: bold;
+					}
+	}

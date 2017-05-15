@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dutchies</title>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Dutchies</h1>
+		</header>
+		<div role="main">
+			<section id="mobile-nav">
+				<button class="eur-usd"><span>Euro</span> naar <span>Dollar</span></button>
+				<button class="usd-eur"><span>Dollar</span> naar <span>Euro</span></button>
+				<button class="celsius-farenheit"><span>Celsius</span> naar <span>Farenheit</span></button>
+				<button class="farenheit-celsius"><span>Farenheit</span> naar <span>Celsius</span></button>
+				<button class="km-mi"><span>Kilometer</span> naar <span>Miles</span></button>
+				<button class="mi-km"><span>Miles</span> naar <span>Kilometer</span></button>
+			</section>
+			<div>
+				<section id="eur-usd">
+					<h1>Euro's naar Dollars</h1>
+					<p>Back</p>
+					<form id="euro" action="index.html" method="post">
+						<label for="euro-val">Euro's:</label>
+						<input type="number" id="euro-val" name="euro-val">
+						<input type="submit" name="" value="reken om!">
+					</form>
+					<output id="dollar-output"></output>
+				</section>
+				<section id="usd-eur">
+					<h1>Dollars naar Euro's</h1>
+					<p>Back</p>
+					<form id="dollar" action="index.html" method="post">
+						<label for="dollar-val">Dollars:</label>
+						<input type="number" id="dollar-val" name="dollar-val">
+						<input type="submit" name="" value="reken om!">
+					</form>
+					<output id="euro-output"></output>
+				</section>
+			</div>
+			<div>
+				<section id="celsius-farenheit">
+					<h1>Celsius naar Farenheit</h1>
+					<p>Back</p>
+					<form id="celsius" action="index.html" method="post">
+						<label for="celsius-val">Celsius:</label>
+						<input type="number" id="celsius-val" name="celsius-val">
+						<input type="submit" name="" value="reken om!">
+					</form>
+					<output id="farenheit-output"></output>
+				</section>
+				<section id="farenheit-celsius">
+					<h1>Farenheit naar Celsius</h1>
+					<p>Back</p>
+					<form id="farenheit" action="index.html" method="post">
+						<label for="farenheit-val">Farenheit:</label>
+						<input type="number" id="farenheit-val" name="farenheit-val">
+						<input type="submit" name="" value="reken om!">
+					</form>
+					<output id="celsius-output"></output>
+				</section>
+			</div>
+			<div>
+				<section id="km-mi">
+					<h1>Kilometers naar Miles</h1>
+					<p>Back</p>
+					<form id="kilometer" action="index.html" method="post">
+						<label for="kilometer-val">Kilometers:</label>
+						<input type="number" id="kilometer-val" name="kilometer-val">
+						<input type="submit" name="" value="reken om!">
+					</form>
+					<output id="miles-output"></output>
+				</section>
+				<section id="mi-km">
+					<h1>Miles naar Kilometers</h1>
+					<p>Back</p>
+					<form id="miles" action="index.html" method="post">
+						<label for="miles-val">Miles:</label>
+						<input type="number" id="miles-val" name="miles-val">
+						<input type="submit" name="" value="reken om!">
+					</form>
+					<output id="kilometer-output"></output>
+				</section>
+			</div>
+		</div>
+		<footer>
+
+		</footer>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
